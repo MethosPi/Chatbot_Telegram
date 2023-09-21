@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv('config.env')
 load_dotenv('login.env')
-BOT_TOKEN = os.environ.get('BOT_TOKEN')
+BOT_TOKEN = ${{ secrets.BOT_TOKEN }}
 login_email = os.environ.get('EMAIL')
 login_pass = os.environ.get('PASS')
 
