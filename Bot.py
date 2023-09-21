@@ -1,14 +1,12 @@
-import os
 import telebot
 from hugchat import hugchat
 from hugchat.login import Login
-from dotenv import load_dotenv
 
 load_dotenv('config.env')
 load_dotenv('login.env')
 BOT_TOKEN = ${{ secrets.BOT_TOKEN }}
-login_email = os.environ.get('EMAIL')
-login_pass = os.environ.get('PASS')
+EMAIL = ${{ secrets.EMAIL }}
+PASS = ${{ secrets.PASS }}
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
