@@ -2,8 +2,6 @@ import telebot
 from hugchat import hugchat
 from hugchat.login import Login
 
-load_dotenv('config.env')
-load_dotenv('login.env')
 BOT_TOKEN = ${{ secrets.BOT_TOKEN }}
 login_email = ${{ secrets.EMAIL }}
 login_pass = ${{ secrets.PASS }}
