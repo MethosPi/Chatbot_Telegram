@@ -5,8 +5,8 @@ from hugchat.login import Login
 load_dotenv('config.env')
 load_dotenv('login.env')
 BOT_TOKEN = ${{ secrets.BOT_TOKEN }}
-EMAIL = ${{ secrets.EMAIL }}
-PASS = ${{ secrets.PASS }}
+login_email = ${{ secrets.EMAIL }}
+login_pass = ${{ secrets.PASS }}
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
